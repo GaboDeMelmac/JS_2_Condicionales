@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba JavaScript 1</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+  </head>
+  <body>
+    <!-----------------------1. Ejercicio 1 ----------- -->
+    <div class="ejercicio_1">
+      <h1>Ejercicio 1</h1>
+
+      <div>
+        <p>Haga click en la imagen</p>
+        <p>
+          <img
+            id="imagen"
+            onclick="
+          const imagen = document.querySelector('#imagen')
+
+          if (imagen.style.border === '') {
+            imagen.style.border  = '2px solid red'
+          }
+          else {imagen.style.border =''
+
+           }
+          // alert('click en la imagen')"
+            src="https://concepto.de/wp-content/uploads/2019/02/paisaje-natural-item-4.jpg"
+            alt="paisaje_natural"
+            width="500px"
+          />
+        </p>
+      </div>
+    </div>
+
+    <!-----------------------2. Ejercicio 2 ----------- -->
+    <div class="ejercicio_2">
+      <h1>Ejercicio 2</h1>
+      <p>Puedes llevar hasta 10 stickers en total, de entre los disponibles:</p>
+      <div class="galeria">
+        <div class="card">
+          <p>
+            <img
+              src="https://www.flamingomotif.ca/cdn/shop/files/IMG_6787_600x600.jpg?v=1714080086"
+              width="200px"
+              alt="nirvana_logo"
+            />
+          </p>
+          <p><input type="number" id="sticker_1" value="" /></p>
+        </div>
+        <div class="card">
+          <p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgD6ZRKkWi1o96c4LTBs1I7MPvaK9Gfe1Qpw&s"
+              width="200px"
+              alt="nirvana_logo"
+            />
+          </p>
+          <p><input type="number" id="sticker_2" value="" /></p>
+        </div>
+
+        <div class="card">
+          <p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVG1zD5wOvOfAsukDgKdXOMhCGaHypqVzDqA&s"
+              width="220px"
+              alt="lez_zeppelin_logo"
+            />
+          </p>
+          <p><input type="number" id="sticker_3" value="" /></p>
+        </div>
+      </div>
+      <p>Favor selecionar la cantidad a llevar</p>
+      <div class="boton_ejerc2">
+        <button id="btnValidar">Verificar</button>
+      </div>
+      <div><p id="resultado_sticker" style="font-size: larger"></p></div>
+    </div>
+
+    <!-----------------------3. Ejercicio 3 ----------- -->
+    <div class="ejercicio_3">
+      <h1>Ejercicio 3</h1>
+      <p>Ingrese el password</p>
+      <div class="botonera">
+        <select id="numero1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+
+        <select id="numero2">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+
+        <select id="numero3">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+      </div>
+
+      <div class="boton2">
+        <button id="btnValidar_2">Ingresar</button>
+      </div>
+
+      <div>
+        <p id="resultado_pass" style="font-size: larger"></p>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
